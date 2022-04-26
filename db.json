@@ -1,4 +1,10 @@
 {
+    "dashboard": {
+        "posts": 4,
+        "likes": 100,
+        "followers": 20,
+        "following": 50
+    },
     "products": [
         {
             "id": 1,
@@ -43,6 +49,78 @@
             "title": "Title 4",
             "category": "music",
             "description": "description 4"
+        }
+    ],
+    "events": [
+        {
+            "id": 1,
+            "title": "Title music 1",
+            "category": "music",
+            "description": "description music 1",
+            "date": "June 1"
+        },
+        {
+            "id": 2,
+            "title": "Title sport 2",
+            "category": "sport",
+            "description": "description sport 2",
+            "date": "June 2"
+        },
+        {
+            "id": 3,
+            "title": "Title music 3",
+            "category": "music",
+            "description": "description music 3",
+            "date": "June 3"
+        },
+        {
+            "id": 4,
+            "title": "Title sport 4",
+            "category": "sport",
+            "description": "description sport 4",
+            "date": "June 4"
+        },
+        {
+            "id": 5,
+            "title": "Title economy 5",
+            "category": "economy",
+            "description": "description economy 5",
+            "date": "June 5"
+        },
+        {
+            "id": 6,
+            "title": "Title sport 6",
+            "category": "sport",
+            "description": "description sport 6",
+            "date": "June 6"
+        },
+        {
+            "id": 7,
+            "title": "Title politic 7",
+            "category": "politic",
+            "description": "description politic 7",
+            "date": "June 17"
+        },
+        {
+            "id": 8,
+            "title": "Title sport 8",
+            "category": "sport",
+            "description": "description sport 8",
+            "date": "June 8"
+        },
+        {
+            "id": 9,
+            "title": "Title economy 9",
+            "category": "economy",
+            "description": "description economy 9",
+            "date": "June 9"
+        },
+        {
+            "id": 10,
+            "title": "Title politic 10",
+            "category": "politic",
+            "description": "description politic 10",
+            "date": "June 10"
         }
     ]
 }

@@ -48,3 +48,16 @@ export interface NewsType {
     category: string;
     description: string;
 }
+
+export interface DashboardType {
+    posts: number;
+    likes: number;
+    followers: number;
+    following: number;
+}
+
+export interface EventType extends NewsType {
+    date: string;
+}
+
+

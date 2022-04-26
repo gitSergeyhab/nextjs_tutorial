@@ -1,0 +1,48 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Title 1",
+            "price": 123,
+            "description": "description 1"
+        },
+        {
+            "id": 2,
+            "title": "Title 2",
+            "price": 200,
+            "description": "description 3"
+        },
+        {
+            "id": 3,
+            "title": "Title 3",
+            "price": 300,
+            "description": "description 3"
+        }
+    ],
+    "news": [
+        {
+            "id": 1,
+            "title": "Title 1",
+            "category": "sport",
+            "description": "description 1"
+        },
+        {
+            "id": 2,
+            "title": "Title 2",
+            "category": "economy",
+            "description": "description 3"
+        },
+        {
+            "id": 3,
+            "title": "Title 3",
+            "category": "music",
+            "description": "description 3"
+        },
+        {
+            "id": 4,
+            "title": "Title 4",
+            "category": "music",
+            "description": "description 4"
+        }
+    ]
+}

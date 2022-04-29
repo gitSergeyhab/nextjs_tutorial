@@ -1,3 +1,6 @@
+// SG - static generation + REVALIDATE + isFallback
+
+
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { ProductType } from "../../types/types";
@@ -49,7 +52,6 @@ export const getStaticPaths: GetStaticPaths = async() => {
     const products: ProductType[] = await res.json();
 
     const paths = products.map((item) => ({ params: { productId: item.id.toString() } }))
-    console.log(paths)
 
     return {
         paths,

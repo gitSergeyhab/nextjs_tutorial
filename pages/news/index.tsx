@@ -1,3 +1,5 @@
+// SSR
+
 import { GetServerSideProps } from "next";
 import { NewsType } from "../../types/types"
 

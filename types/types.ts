@@ -60,4 +60,7 @@ export interface EventType extends NewsType {
     date: string;
 }
 
-
+export interface CommentType {
+    id: string;
+    comment: string;
+}

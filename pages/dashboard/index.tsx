@@ -1,3 +1,5 @@
+//  CSR
+
 import { useEffect, useState } from "react";
 import { DashboardType } from "../../types/types";
 

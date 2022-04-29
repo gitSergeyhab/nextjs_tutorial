@@ -3,10 +3,6 @@ import { User } from "../components/user";
 import { UserType } from "../types/types";
 
 
-
-
-
-
 const UserList = ({ users }: { users: UserType[] }) => {
 
     const userList = users.map((item) => <User user={item} key={item.id}/>);
@@ -17,9 +13,7 @@ const UserList = ({ users }: { users: UserType[] }) => {
             <ul>
                 {userList}
             </ul>
-
         </>
-        
     )
 }
 

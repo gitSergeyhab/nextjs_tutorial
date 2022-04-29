@@ -1,3 +1,5 @@
+// SG - static generation
+
 import { GetStaticProps } from "next";
 import { PostLink } from "../../components/post-link";
 import { PostType } from "../../types/types"

@@ -1,9 +1,9 @@
+// SG - static generation
+
 import { GetStaticPaths, GetStaticProps } from "next";
 import { PostType } from "../../types/types";
 
 const Post = ({post} : {post: PostType}) => {
-
-
 
     return (
         <>

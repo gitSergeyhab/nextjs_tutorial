@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { comments } from "../../../data/comment";
+import { comments } from "data/comment";
 
 export default function handler ( req: NextApiRequest, res: NextApiResponse ) {
 

@@ -1,7 +1,7 @@
 //  CSR
 
 import { useEffect, useState } from "react";
-import { DashboardType } from "../../types/types";
+import { DashboardType } from "types/types";
 
 const Dashboard = () => {
     const [isLoading, setLoading] = useState(true);

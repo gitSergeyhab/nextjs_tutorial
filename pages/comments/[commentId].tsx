@@ -1,8 +1,8 @@
 // SG + data from data no API
 
 import { GetStaticPaths, GetStaticProps } from "next";
-import { comments } from "../../data/comment";
-import { CommentType } from "../../types/types";
+import { comments } from "data/comment";
+import { CommentType } from "types/types";
 
 
 const Comment = ({ comment } : { comment: CommentType }) => {

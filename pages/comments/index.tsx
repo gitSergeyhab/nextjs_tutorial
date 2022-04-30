@@ -2,7 +2,7 @@
 // API POST
 
 import { FormEvent, useState } from "react";
-import { CommentType } from "../../types/types";
+import { CommentType } from "types/types";
 
 const Comment = ({comment, fetchComments} : { comment: CommentType, fetchComments: () => Promise<void> }) => {
 

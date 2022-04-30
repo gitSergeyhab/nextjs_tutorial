@@ -3,7 +3,7 @@
 import { GetServerSideProps } from "next";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { EventType } from "../../types/types"
+import { EventType } from "types/types"
 
 const Category = {
     Economy: 'economy',

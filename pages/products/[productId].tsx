@@ -4,7 +4,7 @@
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import { ProductType } from "../../types/types";
+import { ProductType } from "types/types";
 
 const Product = ( {product} : { product: ProductType}) => {
 

@@ -3,7 +3,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { ProductType } from "../../types/types";
+import { ProductType } from "types/types";
 
 import styles from './product.module.scss';
 

@@ -1,5 +1,5 @@
 import { GetServerSideProps } from "next";
-import { NewsType } from "../../types/types";
+import { NewsType } from "types/types";
 
 const NewsByCategory = ({ category, news } : { category: string, news: NewsType[] }) => {
 

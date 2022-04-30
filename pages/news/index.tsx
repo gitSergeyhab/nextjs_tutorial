@@ -3,7 +3,7 @@
 
 import { GetServerSideProps } from "next";
 import styled from "styled-components";
-import { NewsType } from "../../types/types"
+import { NewsType } from "types/types"
 
 
 const Title = styled.h1`

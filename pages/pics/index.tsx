@@ -1,7 +1,7 @@
 // IMAGE
 
 import Image from "next/image";
-import pic_6 from '../../public/img/6.jpg';
+import pic_6 from 'public/img/6.jpg';
 
 const Pics = () => {
 

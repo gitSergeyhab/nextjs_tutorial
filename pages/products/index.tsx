@@ -17,6 +17,9 @@ const ProductList = ({products} : {products: ProductType[]}) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <h1>ProductList</h1>
+            {/* <p> SECRET_KEY: {process.env.SECRET_KEY || 'Cannot show'}</p> */} {/** <-- ERRORS */}
+            <p> PUBLIC_KEY: {process.env.NEXT_PUBLIC_KEY || 'Cannot show'}</p>
+
             <ul className={styles.products}>
                 {productList}
             </ul>
@@ -30,6 +33,11 @@ export const getStaticProps: GetStaticProps = async() => {
     const res = await fetch('http://localhost:4000/products');
 
     const products = await res.json();
+
+    console.log(
+    'SECRET_KEY:', process.env.SECRET_KEY || 'Cannot show', '  /  ', 
+    'PUBLIC_KEY:', process.env.NEXT_PUBLIC_KEY || 'Cannot show',
+    )
 
     return {
         props: {

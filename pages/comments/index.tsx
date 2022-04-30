@@ -52,11 +52,11 @@ const Comment = ({comment, fetchComments} : { comment: CommentType, fetchComment
 
     
     return (
-        <li key={comment.id}>
+        <li key={comment.id} className='m-4'>
             {comment.id}. {currentName} 
-            <button type="button" onClick={handleDelClick}>Delete</button> 
+            <button type="button" onClick={handleDelClick} className='btn btn-danger mx-2'>Delete</button> 
             <input value={value} onChange={handleValueChange} placeholder={'enter new name here'}/>
-            <button type="button" onClick={handleRenameClick}>Rename</button> 
+            <button type="button" onClick={handleRenameClick} className='btn btn-warning mx-2'>Rename</button> 
          </li>
     )
 }
@@ -107,14 +107,14 @@ const Comments = () => {
     return (
         <>
             <h1>Comments</h1>
-            <button onClick={handleBtnClick} type={'button'}>
+            <button onClick={handleBtnClick} type={'button'} className='btn btn-success mx-2'>
                 load comments
             </button>
             <ul>
                 {commentList}
             </ul>
             <input type={'text'} onChange={handleCommentInput} value={comment}/>
-            <button type={'button'} onClick={handleCommentAdd}> add your comment </button>
+            <button type={'button'} onClick={handleCommentAdd} className='btn btn-primary mx-2'> add your comment </button>
         </>
     );
 }

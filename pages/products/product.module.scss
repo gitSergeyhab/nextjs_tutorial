@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.products {
+    list-style: none;
+    background-color: $orange;
+    display: flex;
+    justify-content: space-between;;
+
+    & li:hover {
+        opacity: 0.5;
+        background-color: $green;
+    }
+
+    & a {
+        text-decoration: none;
+        color: black;
+    }
+}

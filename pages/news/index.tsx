@@ -1,7 +1,16 @@
 // SSR
+// styled-components
 
 import { GetServerSideProps } from "next";
+import styled from "styled-components";
 import { NewsType } from "../../types/types"
+
+
+const Title = styled.h1`
+font-size: 40px;
+color: ${({ theme }) => theme.colors.blue};
+text-transform: uppercase;
+`
 
 const NewsList = ({news} : {news: NewsType[]}) => {
     
@@ -11,7 +20,7 @@ const NewsList = ({news} : {news: NewsType[]}) => {
 
     return (
         <>
-            <h1>NewsList</h1>
+            <Title>NewsList</Title>
             <ul>
                 { newsList }
             </ul>

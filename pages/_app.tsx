@@ -20,6 +20,8 @@ const theme = {
 
 function MyApp({ Component, pageProps }: AppProps) {
 
+  console.log(pageProps)
+
 
 
   if (pageProps.noLayout) { // чтоб без хедера и футера проброситьв пропс getStaticProps и тп {noLayout: true}

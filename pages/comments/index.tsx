@@ -13,14 +13,14 @@ const Comment = ({comment, fetchComments} : { comment: CommentType, fetchComment
 
     const handleDelClick = async() => {
         try {
-            console.log(`/api/comments/${comment.id}`)
+            // console.log(`/api/comments/${comment.id}`)
             const res = await fetch(`/api/comments/${comment.id}`, {
                 method: 'DELETE',
 
             });
 
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
             fetchComments();
 
         } catch {
@@ -39,7 +39,7 @@ const Comment = ({comment, fetchComments} : { comment: CommentType, fetchComment
 
     
             const data = await res.json();
-            console.log(data);
+            // console.log(data);
 
             setCurrentName(data.comment);
             setValue('');
@@ -93,7 +93,7 @@ const Comments = () => {
                  })
     
                  const data = await res.json();
-                 console.log(data);
+                //  console.log(data);
                  setComment('');
                  handleBtnClick();
             }

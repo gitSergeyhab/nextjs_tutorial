@@ -34,10 +34,10 @@ export const getStaticProps: GetStaticProps = async() => {
 
     const products = await res.json();
 
-    console.log(
-    'SECRET_KEY:', process.env.SECRET_KEY || 'Cannot show', '  /  ', 
-    'PUBLIC_KEY:', process.env.NEXT_PUBLIC_KEY || 'Cannot show',
-    )
+    // console.log(
+    // 'SECRET_KEY:', process.env.SECRET_KEY || 'Cannot show', '  /  ', 
+    // 'PUBLIC_KEY:', process.env.NEXT_PUBLIC_KEY || 'Cannot show',
+    // )
 
     return {
         props: {

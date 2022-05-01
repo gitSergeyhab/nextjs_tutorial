@@ -64,7 +64,7 @@ export const getServerSideProps: GetServerSideProps = async(context) => {
     const { category } = query;
 
     const param = category ? category : '';
-    console.log('param', param)
+    // console.log('param', param)
 
     const res = await fetch(`http://localhost:4000/events/${param}`);
     const events = await res.json();

@@ -13,7 +13,7 @@ const AuthStatus = {
 const Header = () => {
 
   const { status, data } = useSession();
-  console.log( status, data )
+  // console.log( status, data )
 
   const handleSignInClick = (evt: MouseEvent) => {
     evt.preventDefault();
@@ -42,6 +42,7 @@ const Header = () => {
         <ul className={styles.navList}>
           <li><Link href={'/'}><a>next-js tutorial</a></Link></li>
 
+          <li><Link href={'/blog'}><a>blog</a></Link></li>
           <li><Link href={'/dashboard-swr'}><a>dashboard (swr)</a></Link></li>
           <li><Link href={'/news'}><a>news</a></Link></li>
           {signInLi}

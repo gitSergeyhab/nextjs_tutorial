@@ -2,6 +2,8 @@
 
 
 import useSWR from 'swr';
+import { signIn, getSession } from 'next-auth/react'
+import { useEffect, useState } from 'react';
 
 
 const fetcher = async() => {
@@ -16,11 +18,26 @@ const DashboardSWR = () => {
 
     const { data, error } = useSWR('dashboard', fetcher);
 
+    const [loading, setLoading] = useState(true);
+
+
+    useEffect(() => {
+        const securePage = async () => {
+            const session = await getSession(); // проверяет авторизованность
+            if (session) {
+                setLoading(false);
+            } else {
+                signIn(); // если не авторизован - перейти на страницу авторизации
+            }
+        };
+        securePage();
+    }, [])
+
     if(error) {
         return <h1>Error</h1>
     }
 
-    if(!data) {
+    if(!data || loading) {
         return <h1>Loading</h1>
     }
     return (

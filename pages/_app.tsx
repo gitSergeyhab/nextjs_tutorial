@@ -4,6 +4,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { SessionProvider } from "next-auth/react"
 
 import { ThemeProvider } from 'styled-components';
 import Footer from '../components/footer';
@@ -19,20 +20,26 @@ const theme = {
 
 function MyApp({ Component, pageProps }: AppProps) {
 
+
+
   if (pageProps.noLayout) { // чтоб без хедера и футера проброситьв пропс getStaticProps и тп {noLayout: true}
     return (
-      <ThemeProvider theme={theme}> 
-        <Component {...pageProps} /> 
-      </ThemeProvider>
+      <SessionProvider session={pageProps.session}>
+        <ThemeProvider theme={theme}> 
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </SessionProvider>
     );
   }
 
   return (
-    <ThemeProvider theme={theme}> 
-      <Header/>
-        <Component {...pageProps} /> 
-      <Footer/>
-    </ThemeProvider>
+    <SessionProvider session={pageProps.session}>
+      <ThemeProvider theme={theme}> 
+        <Header/>
+          <Component {...pageProps} />
+        <Footer/>
+      </ThemeProvider>
+    </SessionProvider>
   ) 
 }
 

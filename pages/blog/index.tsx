@@ -1,3 +1,5 @@
+// SSR secure AUTH
+
 import { GetServerSideProps } from "next";
 import { getSession } from "next-auth/react";
 import { NewsType } from "types/types";

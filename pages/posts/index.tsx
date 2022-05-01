@@ -22,7 +22,7 @@ const PostList = ({posts} : {posts: PostType[]}) => {
 export const getStaticProps: GetStaticProps = async () => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=10');
-    const data = await res.json()
+    const data = await res.json();
 
     return {
         props: {

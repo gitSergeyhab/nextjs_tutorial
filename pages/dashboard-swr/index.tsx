@@ -1,5 +1,7 @@
 // CSR + swr
 
+// CS client-side secure AUTH
+
 
 import useSWR from 'swr';
 import { signIn, getSession } from 'next-auth/react'
